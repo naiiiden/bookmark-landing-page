@@ -1,0 +1,139 @@
+main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    .text_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+            color: $very-dark-blue;
+            font-weight: 500;
+        }
+
+        p {
+            color: $grayish-blue;
+            font-size: 1rem;
+        }
+
+        .buttons_wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            button {
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                padding: .75rem .5rem;
+
+                &.chrome {
+                    border: 2px solid $soft-blue;
+                    border-radius: .5rem;
+                    background: $soft-blue;
+                    color: #fff;
+                    font-weight: 500;
+                    font-family: inherit;
+
+
+                    &:hover {
+                        background: transparent;
+                        color: $soft-blue;
+                        transition: .2s;
+                    }
+                }
+
+                &.firefox {
+                    border: 2px solid #fff;
+                    border-radius: .5rem;
+                    color: $grayish-blue;
+                    font-family: inherit;
+                    font-weight: 500;
+
+                    &:hover {
+                        border: 2px solid $grayish-blue;
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 3rem 12rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .text_wrapper {
+            width: 40%;
+            text-align: start;
+            align-items: flex-start;
+
+            .buttons_wrapper {
+                button {
+                    padding: .75rem 1rem;
+                }
+            }
+        }
+
+        .illustration_hero {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        .text_wrapper {
+            width: 45%;
+            gap: 2rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .buttons_wrapper {
+                button {
+                    padding: 1rem 1.5rem;
+                }
+            }
+        }
+
+        .illustration_hero {
+            margin-top: 3rem;
+            width: 55%;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    main {
+
+        .text_wrapper {
+            width: 40%;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        .illustration_hero {
+            width: 60%;
+        }
+    }
+}
