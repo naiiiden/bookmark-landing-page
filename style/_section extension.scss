@@ -1,0 +1,105 @@
+.extension {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    h2 {
+        color: $very-dark-blue;
+        font-weight: 500;
+        font-size: 1.75rem;
+    }
+
+    p {
+        color: $grayish-blue;
+        font-size: 1rem;
+    }
+
+    .browsers_container {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        aside {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 1rem .5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+
+            h3 {
+                margin-top: 1.5rem;
+                color: $very-dark-blue;
+                font-weight: 500;
+            }
+
+            .dots {
+                margin-top: 1rem;
+            }
+
+            a {
+                cursor: pointer;
+                border: 2px solid $soft-blue;
+                margin-top: .5rem;
+                background: $soft-blue;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: .9rem;
+                padding: .65rem;
+                border-radius: .5rem;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                &:hover {
+                    background: transparent;
+                    color: $soft-blue;
+                    transition: .2s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .extension {
+        padding: 3rem 12rem;
+
+        .browsers_container {
+            margin-top: 4rem;
+            flex-direction: row;
+            height: 400px;
+
+            aside {
+                height: fit-content;
+
+                &.firefox {
+                    align-self: center;
+                }
+
+                &.opera {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .extension {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1em;
+
+            &.extension_description {
+                width: 40%;
+            }
+        }
+    }
+}

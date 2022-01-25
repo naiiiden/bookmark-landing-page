@@ -572,4 +572,132 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
     width: 40%;
   }
 }
+
+.extension {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.extension h2 {
+  color: #252b46;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.extension p {
+  color: #9194a1;
+  font-size: 1rem;
+}
+
+.extension .browsers_container {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.extension .browsers_container aside {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.extension .browsers_container aside h3 {
+  margin-top: 1.5rem;
+  color: #252b46;
+  font-weight: 500;
+}
+
+.extension .browsers_container aside .dots {
+  margin-top: 1rem;
+}
+
+.extension .browsers_container aside a {
+  cursor: pointer;
+  border: 2px solid #5368df;
+  margin-top: .5rem;
+  background: #5368df;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: .9rem;
+  padding: .65rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.extension .browsers_container aside a:hover {
+  background: transparent;
+  color: #5368df;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media screen and (min-width: 1024px) {
+  .extension {
+    padding: 3rem 12rem;
+  }
+  .extension .browsers_container {
+    margin-top: 4rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 400px;
+  }
+  .extension .browsers_container aside {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .extension .browsers_container aside.firefox {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .extension .browsers_container aside.opera {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .extension h2 {
+    font-size: 2.5rem;
+  }
+  .extension p {
+    font-size: 1em;
+  }
+  .extension p.extension_description {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
