@@ -572,6 +572,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 
 .extension {
+  margin-top: 5rem;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,6 +702,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 
 .faq {
+  margin-top: 5rem;
   padding: 1.5rem;
   text-align: center;
   display: -webkit-box;
@@ -845,6 +847,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 
 .stayuptodate_container {
+  margin-top: 5rem;
   padding: 3rem 1.5rem;
   background: #5368df;
   text-align: center;
@@ -1027,6 +1030,16 @@ footer nav ul .socials {
   gap: 2rem;
 }
 
+footer nav ul .socials svg {
+  fill: #fff;
+}
+
+footer nav ul .socials svg:hover {
+  fill: #fa5757;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 @media screen and (min-width: 1024px) {
   footer {
     padding: 2rem 12rem;
@@ -1060,14 +1073,6 @@ footer nav ul .socials {
     margin-top: 0;
     margin-left: auto;
     gap: 2.5rem;
-  }
-  footer nav ul .socials svg {
-    fill: #fff;
-  }
-  footer nav ul .socials svg:hover {
-    fill: #fa5757;
-    -webkit-transition: .2s;
-    transition: .2s;
   }
 }
 /*# sourceMappingURL=style.css.map */
