@@ -698,4 +698,111 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
     width: 40%;
   }
 }
+
+.faq {
+  padding: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.faq h2 {
+  color: #252b46;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.faq p {
+  color: #9194a1;
+  font-size: 1rem;
+}
+
+.faq details {
+  width: 100%;
+  text-align: start;
+  border-bottom: 1px solid #9194a1;
+}
+
+.faq details svg {
+  stroke: #5267DF;
+}
+
+.faq details[open] svg {
+  stroke: #fa5757;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.faq details[open] summary ~ * {
+  -webkit-animation: open 0.3s ease-in-out;
+          animation: open 0.3s ease-in-out;
+}
+
+@-webkit-keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.faq summary {
+  color: #252b46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .9rem;
+  text-align: start;
+  cursor: pointer;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary:hover {
+  color: #fa5757;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq {
+    padding: 3rem 12rem;
+  }
+  .faq details {
+    width: 550px;
+  }
+  .faq details summary {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

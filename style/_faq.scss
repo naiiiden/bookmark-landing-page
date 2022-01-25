@@ -1,0 +1,86 @@
+.faq {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        color: $very-dark-blue;
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+
+    p {
+        color: $grayish-blue;
+        font-size: 1rem;
+    }
+    
+    details {
+        width: 100%;
+        text-align: start;
+        border-bottom: 1px solid $grayish-blue;
+
+        svg {
+            stroke: #5267DF;
+        }
+
+        &[open] {
+            
+            svg {
+                stroke: $soft-red;
+                transform: rotate(180deg);
+                transition: .2s;
+            } 
+        }
+    }
+
+    details[open] summary ~ * {
+        animation: open 0.3s ease-in-out;
+    }
+    
+    @keyframes open {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+    summary {
+        color: $very-dark-blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .9rem;
+        text-align: start;
+        cursor: pointer;
+        
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &:hover {
+            color: $soft-red;
+            transition: .2s;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .faq {
+        padding: 3rem 12rem;
+
+        details {
+            width: 550px;
+
+            summary {
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+    }
+}
