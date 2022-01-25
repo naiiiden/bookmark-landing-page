@@ -726,14 +726,30 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   font-size: 1rem;
 }
 
+.faq .details_container {
+  margin-top: 1.5rem;
+}
+
 .faq details {
   width: 100%;
   text-align: start;
+  padding: 1rem 0;
   border-bottom: 1px solid #9194a1;
 }
 
 .faq details svg {
   stroke: #5267DF;
+}
+
+.faq details p {
+  opacity: 0;
+  padding: 1rem 0;
+}
+
+.faq details[open] p {
+  opacity: 1;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 .faq details[open] svg {
@@ -742,29 +758,6 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
           transform: rotate(180deg);
   -webkit-transition: .2s;
   transition: .2s;
-}
-
-.faq details[open] summary ~ * {
-  -webkit-animation: open 0.3s ease-in-out;
-          animation: open 0.3s ease-in-out;
-}
-
-@-webkit-keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .faq summary {
@@ -793,16 +786,60 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   transition: .2s;
 }
 
+.faq a {
+  margin-top: 2rem;
+  display: block;
+  background: #5368df;
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 2px solid #5368df;
+  font-size: .9rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.faq a:hover {
+  background: none;
+  color: #5368df;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 @media screen and (min-width: 1024px) {
   .faq {
     padding: 3rem 12rem;
+    gap: 1rem;
+  }
+  .faq .details_container {
+    margin-top: 3rem;
   }
   .faq details {
     width: 550px;
+    padding: 1.25rem 0;
+  }
+  .faq details.first {
+    border-top: 1px solid #9194a1;
   }
   .faq details summary {
     font-weight: 400;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq h2 {
+    font-size: 2.5rem;
+  }
+  .faq p {
+    font-size: 1em;
+  }
+  .faq p.faq_description {
+    width: 40%;
+  }
+  .faq a {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
