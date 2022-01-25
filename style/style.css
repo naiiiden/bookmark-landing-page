@@ -611,6 +611,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 
 .extension .browsers_container aside {
+  border-radius: 1rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem .5rem;
