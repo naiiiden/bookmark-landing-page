@@ -9,6 +9,7 @@
     h2 {
         font-size: 1.75rem;
         color: $very-dark-blue;
+        font-weight: 500;
     }
 
     p {
@@ -100,10 +101,6 @@
 @media screen and (min-width: 1024px) {
     .features {
         padding: 3rem 12rem;
-
-        h2 {
-            font-weight: 500;
-        }
 
         .features_description {
             width: 50%;

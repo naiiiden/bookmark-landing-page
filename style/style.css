@@ -352,6 +352,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 .features h2 {
   font-size: 1.75rem;
   color: #252b46;
+  font-weight: 500;
 }
 
 .features p {
@@ -460,9 +461,6 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 @media screen and (min-width: 1024px) {
   .features {
     padding: 3rem 12rem;
-  }
-  .features h2 {
-    font-weight: 500;
   }
   .features .features_description {
     width: 50%;
