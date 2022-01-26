@@ -164,8 +164,14 @@
     <p>35,000+ already joined</p>
     <h2>Stay up-to-date with what we’re doing</h2>
     <form novalidate>
-      <input type="email" name="email" id="email" class="email" placeholder="Enter your email address" required>
-      <input type="submit" id="submit" class="submit" value="Contact Us">
+      <div class="email_container" id="email_container">
+        <input type="email" name="email" id="email" class="email" placeholder="Enter your email address" required>
+        <img src="images/icon-error.svg" id="icon_error" class="icon_error" alt="">
+        <span class="error"></span>
+      </div>
+      <div class="submit_container">
+        <input type="submit" id="submit" class="submit" value="Contact Us">
+      </div>
     </form>
   </aside>
 
