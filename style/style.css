@@ -45,7 +45,8 @@ img {
     position: fixed;
     left: 0;
     right: 0;
-    top: 999rem;
+    top: 999%;
+    z-index: 98;
     bottom: 0;
     width: 0;
     -webkit-transition: width 3s;
@@ -929,6 +930,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   padding: .25rem;
   width: 220px;
   height: 4.5rem;
+  z-index: 1;
 }
 
 .stayuptodate_container form .email_container .icon_error {
