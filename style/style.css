@@ -459,6 +459,29 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   display: none;
 }
 
+.fade {
+  -webkit-animation: fade .75s;
+          animation: fade .75s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .features {
     padding: 3rem 12rem;
