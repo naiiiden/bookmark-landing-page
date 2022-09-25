@@ -1,4 +1,4 @@
-main {
+.main {
     padding: 1.5rem;
     display: flex;
     flex-direction: column-reverse;
@@ -67,7 +67,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    main {
+    .main {
         padding: 3rem 12rem;
         flex-direction: row;
         align-items: center;
@@ -92,7 +92,7 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-    main {
+    .main {
         .text_wrapper {
             width: 45%;
             gap: 2rem;
@@ -120,8 +120,7 @@ main {
 }
 
 @media screen and (min-width: 1600px) {
-    main {
-
+    .main {
         .text_wrapper {
             width: 40%;
 

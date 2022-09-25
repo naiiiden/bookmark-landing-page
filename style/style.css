@@ -147,38 +147,38 @@ img {
     display: none;
   }
 }
-main {
+.main {
   padding: 1.5rem;
   display: flex;
   flex-direction: column-reverse;
   gap: 1rem;
 }
-main .text_wrapper {
+.main .text_wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: center;
 }
-main .text_wrapper h1 {
+.main .text_wrapper h1 {
   font-size: 2rem;
   color: hsl(229deg, 31%, 21%);
   font-weight: 500;
 }
-main .text_wrapper p {
+.main .text_wrapper p {
   color: #545963;
   font-size: 1rem;
 }
-main .text_wrapper .buttons_wrapper {
+.main .text_wrapper .buttons_wrapper {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-main .text_wrapper .buttons_wrapper button {
+.main .text_wrapper .buttons_wrapper button {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 0.75rem 0.5rem;
 }
-main .text_wrapper .buttons_wrapper button.chrome {
+.main .text_wrapper .buttons_wrapper button.chrome {
   border: 2px solid hsl(231deg, 69%, 60%);
   border-radius: 0.5rem;
   background: hsl(231deg, 69%, 60%);
@@ -186,72 +186,72 @@ main .text_wrapper .buttons_wrapper button.chrome {
   font-weight: 500;
   font-family: inherit;
 }
-main .text_wrapper .buttons_wrapper button.chrome:hover {
+.main .text_wrapper .buttons_wrapper button.chrome:hover {
   background: transparent;
   color: hsl(231deg, 69%, 60%);
   transition: 0.2s;
 }
-main .text_wrapper .buttons_wrapper button.firefox {
+.main .text_wrapper .buttons_wrapper button.firefox {
   border: 2px solid #fff;
   border-radius: 0.5rem;
   color: #545963;
   font-family: inherit;
   font-weight: 500;
 }
-main .text_wrapper .buttons_wrapper button.firefox:hover {
+.main .text_wrapper .buttons_wrapper button.firefox:hover {
   border: 2px solid hsl(229deg, 8%, 60%);
   transition: 0.2s;
 }
 
 @media screen and (min-width: 1024px) {
-  main {
+  .main {
     padding: 3rem 12rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  main .text_wrapper {
+  .main .text_wrapper {
     width: 40%;
     text-align: start;
     align-items: flex-start;
   }
-  main .text_wrapper .buttons_wrapper button {
+  .main .text_wrapper .buttons_wrapper button {
     padding: 0.75rem 1rem;
   }
-  main .illustration_hero {
+  .main .illustration_hero {
     width: 60%;
   }
 }
 @media screen and (min-width: 1440px) {
-  main .text_wrapper {
+  .main .text_wrapper {
     width: 45%;
     gap: 2rem;
   }
-  main .text_wrapper h1 {
+  .main .text_wrapper h1 {
     font-size: 3rem;
   }
-  main .text_wrapper p {
+  .main .text_wrapper p {
     font-size: 1em;
   }
-  main .text_wrapper .buttons_wrapper button {
+  .main .text_wrapper .buttons_wrapper button {
     padding: 1rem 1.5rem;
   }
-  main .illustration_hero {
+  .main .illustration_hero {
     margin-top: 3rem;
     width: 55%;
   }
 }
 @media screen and (min-width: 1600px) {
-  main .text_wrapper {
+  .main .text_wrapper {
     width: 40%;
   }
-  main .text_wrapper h1 {
+  .main .text_wrapper h1 {
     font-size: 3.5rem;
   }
-  main .text_wrapper p {
+  .main .text_wrapper p {
     font-size: 1.1em;
   }
-  main .illustration_hero {
+  .main .illustration_hero {
     width: 60%;
   }
 }
