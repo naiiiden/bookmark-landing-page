@@ -165,7 +165,7 @@ main .text_wrapper h1 {
   font-weight: 500;
 }
 main .text_wrapper p {
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
   font-size: 1rem;
 }
 main .text_wrapper .buttons_wrapper {
@@ -269,7 +269,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   font-weight: 500;
 }
 .features p {
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
   font-size: 1rem;
 }
 .features .slider_buttons {
@@ -295,7 +295,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 .features .slider_buttons .button span {
   margin-top: auto;
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
 }
 .features .slider_buttons .button .active_bottom_border {
   margin-top: auto;
@@ -304,7 +304,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   background: none;
 }
 .features .slider_buttons .active span {
-  color: hsl(229deg, 31%, 21%);
+  color: #545963;
   transition: 0.2s;
 }
 .features .slider_buttons .active .active_bottom_border {
@@ -330,7 +330,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   margin-top: 2rem;
 }
 .features .slide p {
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
 }
 .features .slide .info {
   display: none;
@@ -468,7 +468,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   font-size: 1.75rem;
 }
 .extension p {
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
   font-size: 1rem;
 }
 .extension .browsers_container {
@@ -560,7 +560,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   font-weight: 500;
 }
 .faq p {
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
   font-size: 1rem;
 }
 .faq .details_container {
