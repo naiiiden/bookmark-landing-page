@@ -132,15 +132,15 @@ img {
     transition: 0.2s;
   }
   header nav .nav-ul a.login {
-    background: hsl(0deg, 94%, 66%);
-    border: 2px solid hsl(0deg, 94%, 66%);
+    background: #B40808;
+    border: 2px solid #B40808;
     padding: 0.5rem 1.25rem;
     color: #fff;
     border-radius: 0.5rem;
   }
   header nav .nav-ul a.login:hover {
     background: transparent;
-    color: hsl(0deg, 94%, 66%);
+    color: #B40808;
     transition: 0.2s;
   }
   header nav .nav-ul .socials, header nav .nav-ul .nav_logo {
@@ -736,8 +736,8 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   cursor: pointer;
   padding: 0.65rem;
   border-radius: 0.25rem;
-  border: 2px solid hsl(0deg, 94%, 66%);
-  background: hsl(0deg, 94%, 66%);
+  border: 2px solid #B40808;
+  background: #B40808;
   color: #fff;
   font-weight: 500;
   font-family: inherit;
@@ -746,7 +746,7 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
 }
 .stayuptodate_container form .submit:hover {
   background: #fff;
-  color: hsl(0deg, 94%, 66%);
+  color: #B40808;
   transition: 0.2s;
 }
 

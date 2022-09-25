@@ -131,15 +131,18 @@
                     }
 
                     &.login {
-                        background: $soft-red;
-                        border: 2px solid $soft-red;
+                        // background: $soft-red;
+                        background: #B40808;
+                        // border: 2px solid $soft-red;
+                        border: 2px solid #B40808;
                         padding: .5rem 1.25rem;
                         color: #fff;
                         border-radius: .5rem;
 
                         &:hover {
                             background: transparent;
-                            color: $soft-red;
+                            // color: $soft-red;
+                            color: #B40808;
                             transition: .2s;
                         }
                     }
