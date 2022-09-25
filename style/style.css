@@ -276,6 +276,11 @@ main .text_wrapper .buttons_wrapper button.firefox:hover {
   padding: 1.5rem 0;
 }
 .features .slider_buttons .button {
+  background: none;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
   cursor: pointer;
   height: 3rem;
   display: flex;
