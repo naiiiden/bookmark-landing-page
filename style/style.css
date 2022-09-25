@@ -194,7 +194,7 @@ main .text_wrapper .buttons_wrapper button.chrome:hover {
 main .text_wrapper .buttons_wrapper button.firefox {
   border: 2px solid #fff;
   border-radius: 0.5rem;
-  color: hsl(229deg, 8%, 60%);
+  color: #545963;
   font-family: inherit;
   font-weight: 500;
 }
